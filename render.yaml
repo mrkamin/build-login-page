@@ -1,18 +1,18 @@
 databases:
-  - name: build_login_page
-    databaseName: build_login_page
-    user: build_login_page
+  - name: mydb
+    databaseName: mydb_rg9n
+    user: mydb_rg9n_user
 
 services:
   - type: web
-    name: build_login_page
+    name: myfriendlist
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: build_login_page
+          name: mydb_rg9n
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false

@@ -85,6 +85,4 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: mydb_rg9n_production
-  username: mydb_rg9n
-  password: <%= ENV["BUILD_LOGIN_PAGE_DATABASE_PASSWORD"] %>
+ 
