@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# The main application module for the BuildLoginPage Rails application.
 require_relative 'boot'
 
 require 'rails/all'
@@ -9,6 +10,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module BuildLoginPage
+  # The main application module for the BuildLoginPage Rails application.
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0

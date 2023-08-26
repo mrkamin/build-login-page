@@ -1,0 +1,18 @@
+databases:
+  - name: mydb
+    databaseName: mydb_rg9n
+    user: mydb_rg9n_user
+
+services:
+  - type: web
+    name: myfriendlist
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mydb_rg9n
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
