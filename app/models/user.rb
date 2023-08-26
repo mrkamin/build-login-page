@@ -1,4 +1,3 @@
-
 # Represents a user in the application.
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
