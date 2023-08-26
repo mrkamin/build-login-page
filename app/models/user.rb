@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 
 # Represents a user in the application.
 class User < ApplicationRecord

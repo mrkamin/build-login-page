@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 
 # The FriendsController handles actions related to managing friends.
 class FriendsController < ApplicationController
