@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# The FriendsController handles actions related to managing friends.
 class DeviseCreateUsers < ActiveRecord::Migration[7.0]
   def change
     create_table :users do |t|
