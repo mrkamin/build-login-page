@@ -36,7 +36,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Render](*https://myfriendlist.onrender.com/*)
+- [Render](https://myfriendlist.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
